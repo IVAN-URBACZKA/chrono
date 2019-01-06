@@ -1,0 +1,84 @@
+h1{
+    text-align: center;
+    font-family: Roboto;
+    letter-spacing: 2px;
+
+}
+
+main{
+    height: 80%;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#chrono{
+    width: 500px;
+    height: 500px;
+    border: 10px solid black;
+    border-radius: 50%;
+    }
+
+#ecran{
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+    border: 5px solid black;
+    width: 350px;
+    padding: 5px;
+    margin-top: 25%;
+    font-family: Roboto;
+    font-size: 20px;
+    background: lightgray;
+    color: black;
+   
+}
+
+#button{
+    margin-top: 2%;
+    display: flex;
+    justify-content: center;
+    
+}
+
+button{
+    border-radius: 50%;
+    background: red;
+    font-size: 25px;
+    padding: 15px;
+    margin-right: 1%;
+    color:white;
+    border: none;
+    
+    
+}
+
+#starter:hover{
+   
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+
+}
+
+
+#stoper:hover{
+   
+    text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+
+}
+
+#bar{
+    border: 1px solid black;
+    width: 0px;
+    height: 50px;
+    margin: auto;
+    background: red;
+}
+
+
