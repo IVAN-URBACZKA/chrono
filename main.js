@@ -40,7 +40,7 @@ let stop = document.querySelector("#stoper");
           heures++;
           chronoHeures.textContent = `${heures}  Heures`;
          }
-    },100)
+    },1000)
 
 
     stop.addEventListener('click',function(){
