@@ -29,7 +29,7 @@ let stop = document.querySelector("#stoper");
         bar.style.width = addbar + "px";
         addbar += 20;
         secondes++;
-        if(secondes == 59){
+        if(secondes == 60){
          addbar = 0;
          minutes++;
          secondes = 0;
@@ -40,7 +40,7 @@ let stop = document.querySelector("#stoper");
           heures++;
           chronoHeures.textContent = `${heures}  Heures`;
          }
-    },1000)
+    },100)
 
 
     stop.addEventListener('click',function(){
