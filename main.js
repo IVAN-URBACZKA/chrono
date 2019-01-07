@@ -8,47 +8,54 @@ let chronoMinutes = document.querySelector("#chronominutes");
 let chronoHeures = document.querySelector("#chronoheures");
 
 let bar = document.querySelector("#bar");
-
-
-
-
-
-
-
 let start = document.querySelector("#starter");
-
 let stop = document.querySelector("#stoper");
+let reset = document.querySelector("#reset");
 
-
-
-
-
- start.addEventListener('click',function(){
+start.addEventListener('click',function(){
     var starterChrono = setInterval(function(){
         chronoSecondes.textContent = `${secondes} Secondes`; 
+        chronoMinutes.textContent = `${minutes}  Minutes`;
+        chronoHeures.textContent = `${heures}  Heures`;
+
+        bar.style.display = "block";
         bar.style.width = addbar + "px";
-        addbar += 20;
+        addbar += 5;
         secondes++;
-        if(secondes == 60){
+
+        if(secondes >= 60){
+         secondes = 0;
          addbar = 0;
          minutes++;
-         secondes = 0;
-         chronoMinutes.textContent = `${minutes}  Minutes`;
+         
         }
-         else if(minutes == 59){
+         else if(minutes >= 60){
           minutes = 0;
           heures++;
-          chronoHeures.textContent = `${heures}  Heures`;
          }
+         
     },1000)
-
 
     stop.addEventListener('click',function(){
         clearInterval(starterChrono);
     })
+
+    reset.addEventListener('click',function(){
+        secondes = 0;
+        minutes = 0;
+        heures = 0;
+        addbar =0;
+        chronoSecondes.textContent = `${secondes} Secondes`; 
+        chronoMinutes.textContent = `${minutes}  Minutes`;
+        chronoHeures.textContent = `${heures}  Heures`;
+        bar.style.width = addbar + "px";
+        bar.style.display = "none";
+        
+      
+    })
     
-})
 
+  })
 
-
-
+      
+        

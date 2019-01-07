@@ -20,9 +20,9 @@ main{
 
 
 #chrono{
-    width: 500px;
-    height: 500px;
-    border: 10px solid black;
+    width: 351px;
+    height: 288px;
+    border: 2px solid black;
     border-radius: 50%;
     }
 
@@ -30,19 +30,19 @@ main{
     display: flex;
     justify-content: space-around;
     margin: auto;
-    border: 5px solid black;
-    width: 350px;
+    border: 2px solid black;
+    width: 200px;
     padding: 5px;
     margin-top: 25%;
     font-family: Roboto;
-    font-size: 20px;
+    font-size: 12px;
     background: lightgray;
     color: black;
    
 }
 
 #button{
-    margin-top: 2%;
+    margin-top: 10%;
     display: flex;
     justify-content: center;
     
@@ -51,7 +51,7 @@ main{
 button{
     border-radius: 50%;
     background: red;
-    font-size: 25px;
+    font-size: 15px;
     padding: 15px;
     margin-right: 1%;
     color:white;
@@ -75,10 +75,43 @@ button{
 
 #bar{
     border: 1px solid black;
-    width: 0px;
+   
     height: 50px;
     margin: auto;
     background: red;
+    display: none;
 }
 
+@media (min-width:768px){
 
+    #chrono{
+        width: 500px;
+        height: 500px;
+        border: 5px solid black;
+        border-radius: 50%;
+        }
+
+        #ecran{
+            display: flex;
+            justify-content: space-around;
+            margin: auto;
+            border: 3px solid black;
+            width: 350px;
+            padding: 5px;
+            margin-top: 25%;
+            font-family: Roboto;
+            font-size: 20px;
+            background: lightgray;
+            color: black;
+           
+        }
+
+        button{
+            font-size: 20px;
+        }
+
+}
+
+@media (min-width:1024px){
+    
+}
